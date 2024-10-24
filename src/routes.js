@@ -17,10 +17,13 @@
 */
 import Dashboard from "views/Dashboard.js";
 import Icons from "views/Icons.js";
-import Map from "views/Map.js";
-import Notifications from "views/Notifications.js";
-import Rtl from "views/Rtl.js";
-import TableList from "views/TableList.js";
+// import Map from "views/Map.js";
+// import Notifications from "views/Notifications.js";
+// import Rtl from "views/Rtl.js";
+// import TableList from "views/TableList.js";
+import Crypto from "views/Crypto.js";
+import Forex from "views/Forex.js";
+import Stock from "views/Stock.js";
 import Typography from "views/Typography.js";
 import UserProfile from "views/UserProfile.js";
 
@@ -41,22 +44,22 @@ var routes = [
     component: <Icons />,
     layout: "/admin",
   },
-  {
-    path: "/map",
-    name: "Map",
-    rtlName: "خرائط",
-    icon: "tim-icons icon-pin",
-    component: <Map />,
-    layout: "/admin",
-  },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    rtlName: "إخطارات",
-    icon: "tim-icons icon-bell-55",
-    component: <Notifications />,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/map",
+  //   name: "Map",
+  //   rtlName: "خرائط",
+  //   icon: "tim-icons icon-pin",
+  //   component: <Map />,
+  //   layout: "/admin",
+  // },
+  // {
+  //   path: "/notifications",
+  //   name: "Notifications",
+  //   rtlName: "إخطارات",
+  //   icon: "tim-icons icon-bell-55",
+  //   component: <Notifications />,
+  //   layout: "/admin",
+  // },
   {
     path: "/user-profile",
     name: "User Profile",
@@ -65,12 +68,36 @@ var routes = [
     component: <UserProfile />,
     layout: "/admin",
   },
+  // {
+  //   path: "/tables",
+  //   name: "Table List",
+  //   rtlName: "قائمة الجدول",
+  //   icon: "tim-icons icon-puzzle-10",
+  //   component: <TableList />,
+  //   layout: "/admin",
+  // },
   {
-    path: "/tables",
-    name: "Table List",
+    path: "/Crypto",
+    name: "Crypto",
     rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
-    component: <TableList />,
+    icon: "tim-icons icon-bold",
+    component: <Crypto />,
+    layout: "/admin",
+  },
+  {
+    path: "/Stock",
+    name: "Stock",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-chart-bar-32",
+    component: <Stock />,
+    layout: "/admin",
+  },
+  {
+    path: "/Forex",
+    name: "Forex",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-chart-pie-36",
+    component: <Forex />,
     layout: "/admin",
   },
   {
@@ -81,13 +108,13 @@ var routes = [
     component: <Typography />,
     layout: "/admin",
   },
-  {
-    path: "/rtl-support",
-    name: "RTL Support",
-    rtlName: "ار تي ال",
-    icon: "tim-icons icon-world",
-    component: <Rtl />,
-    layout: "/rtl",
-  },
+  // {
+  //   path: "/rtl-support",
+  //   name: "RTL Support",
+  //   rtlName: "ار تي ال",
+  //   icon: "tim-icons icon-world",
+  //   component: <Rtl />,
+  //   layout: "/rtl",
+  // },
 ];
 export default routes;
