@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import {
   Card,
+  CardHeader,
   CardBody,
   CardTitle,
+  Table,
   Row,
   Col,
 } from "reactstrap";
@@ -208,6 +210,36 @@ function Tables() {
               </Card>
             </Col>
           )}
+        </Row>
+        <Row>
+          <Col md="12">
+            <Card className="card-plain">
+              <CardHeader>
+                <CardTitle tag="h4">Table on Plain Background</CardTitle>
+                <p className="category">Here is a subtitle for this table</p>
+              </CardHeader>
+              <CardBody>
+                <Table className="tablesorter" responsive>
+                  <thead className="text-primary">
+                    <tr>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Volume</th>
+                      <th className="text-center">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>BTC</td>
+                      <td>70000</td>
+                      <td>1</td>
+                      <td className="text-center">$70,000</td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </CardBody>
+            </Card>
+          </Col>
         </Row>
       </div>
     </>
